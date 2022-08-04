@@ -19,16 +19,6 @@ menu = {
     "Tortilla Salad": 8.00
 }
 
-"""
-create an infinite loop
-Convert to lowercase
-convert to title case
-loop through the menu
-for each order in the menu,
-if the item ordered is in the menu,
-get the price and add to the total
-"""
-
 # total's value to 0
 total = 0
 
@@ -60,5 +50,5 @@ An important note:
 
 David failed to mention that windows users cannot use 'control d' to exit out of a running code.
 because of this, the exception will not catch the keyboard combination
-if you are working on a locally installed vscode, rather use 'control z'
+if you are working on a locally installed vscode on windows, rather use 'control z'
 """
