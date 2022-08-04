@@ -29,27 +29,36 @@ if the item ordered is in the menu,
 get the price and add to the total
 """
 
-
-i = 1
+# total's value to 0
 total = 0
 
+# create an infinite loop
 while True:
     try:
+        # convert user's input to title case
         item = input("Item:  ").title()
+        # loop through the menu
         for ord in menu:
+            # if user's input matches an item
             if ord == item:
+                # get the item's price
                 order = menu[ord]
+                # add the price to total's value
                 total = total + order
+                # print the total, format it to two decimal places and add a preceeding dollar sign
                 print(f"Toatal: ${total:.2f}")
+    # if 'control d' is entered
     except EOFError:
+        # print a new line
         print("\n")
+        # exit the loop
         break
 
 
 """
 An important note:
 
-David failed to mention that windows users do cannot use 'control d' to exit out of a running code.
-becuase of this the exception will not catch the keyboard combination
+David failed to mention that windows users cannot use 'control d' to exit out of a running code.
+because of this, the exception will not catch the keyboard combination
 if you are working on a locally installed vscode, rather use 'control z'
 """
