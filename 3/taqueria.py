@@ -34,7 +34,7 @@ while True:
                 # add the price to total's value
                 total = total + order
                 # print the total, format it to two decimal places and add a preceeding dollar sign
-                print(f"Toatal: ${total:.2f}")
+                print(f"Total: ${total:.2f}")
     # if 'control d' is entered
     except EOFError:
         # print a new line
