@@ -13,4 +13,16 @@ elif greeting.startswith("h") or greeting.startswith("H"):
 else:
     print("$100")
 
+"""
+Another way of solving this is:
 
+greeting = input("Greeting:  ").casefold().strip()
+
+if greeting.startswith("hello"):
+    print("$0")
+elif greeting.startswith("h"):
+    print("$20")
+else:
+    print("$100")
+
+"""
