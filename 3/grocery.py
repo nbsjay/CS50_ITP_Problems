@@ -6,7 +6,7 @@ prefixing each line with the number of times the user inputted that item.
 No need to pluralize the items. Treat the user's input case-insensitively.
 """
 
-gl = {}
+gl = {} # A dictionary for the grocery list
 
 while True:
     try:
