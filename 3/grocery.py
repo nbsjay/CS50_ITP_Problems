@@ -12,17 +12,16 @@ while True:
     try:
         # get item from user and change to uppercase
         item = input().upper()
-        # if item is in the dictionary, add one to its value
+        # if item (key) is in the dictionary
         if item in gl:
             # add one to its value
             gl[item] += 1
             # if its not in the dictionary
         else:
-            # set its value to 1
+            # add item(key) to the dictionary and set its value to 1
             gl[item] = 1
     except EOFError:
-        for thing in sorted(gl):
-            # print the key and the value of the key
-            # [thing] is the name of the item, and 'thing' is the value
-            print(gl[thing], thing)
+        for key in sorted(gl):
+            # print the value of the key and the key
+            print(gl[key], key)
         break
