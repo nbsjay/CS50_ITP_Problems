@@ -4,4 +4,9 @@ then outputs the “emojized” version of that str, converting any
 codes (or aliases) therein to their corresponding emoji.
 
 """
+import emoji
+text = input("Input: ")
 
+output = emoji.emojize(text)
+
+print("Output", output)
